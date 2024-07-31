@@ -1,4 +1,4 @@
-import {Icon, Rainbow, FileLink} from "./components";
+import {Icon, Rainbow, FileLink, Link} from "./components";
 
 function App() {
 
@@ -6,30 +6,35 @@ function App() {
         <div className={"container"}>
 
             <div className="p-4 text-eapo-blue-dark">
-                <Icon icon={"envelope"} size={"2xl"} spin={false}/>
+                <Icon icon={"gem"} size={"7x"} spin={false}/>
             </div>
-
             <div className="p-4 text-eapo-blue-dark">
-                <Icon icon={"gem"} size={"7x"} spin={false} />
+                <Rainbow />
             </div>
-
-            <div className="p-4 text-eapo-blue-dark">
+            <div className="p-4 text-eapo-red">
                 <Icon icon={"envelope-open"} size={"2xl"} spin={false}/>
             </div>
+            <div className="p-4">
+                <FileLink href={"#"} filetype={"txt"}/>
+            </div>
+            <div className="p-4">
+                <FileLink href={"#"} filetype={"pptx"} disposition={"horizontal"}/>
+            </div>
+            <div className="p-4">
+                <FileLink href={"#"} filetype={"zip"} disposition={"vertical"}/>
+            </div>
+            <div className="p-4">
+                <FileLink href={"#"} filetype={"jpg"} disposition={"vertical"}/>
+            </div>
+            <div className="p-4">
+                <FileLink href={"#"} filetype={"jpg"}>
+                    Или не скачать
+                </FileLink>
+            </div>
+            <div className="p-4">
+                <Link href={"#"}>А это обычная ссылка</Link>
+            </div>
 
-            <Rainbow/>
-            <FileLink href={"#"} filetype={"txt"}/>
-            <FileLink href={"#"} filetype={"pptx"} disposition={"horizontal"}/>
-            <FileLink href={"#"} filetype={"zip"} disposition={"vertical"}/>
-            <FileLink href={"#"} filetype={"jpg"} disposition={"vertical"}/>
-
-            <FileLink href={"#"} filetype={"jpg"}>
-                Или не скачать
-            </FileLink>
-
-            <FileLink href={"#"} filetype={"jpg"} disposition={"vertical"}>
-                Или не скачать
-            </FileLink>
 
         </div>
     )
