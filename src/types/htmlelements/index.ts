@@ -1,1 +1,2 @@
-export * from "./icon/icon.ts";
+export * from "./icon";
+export * from "./links";

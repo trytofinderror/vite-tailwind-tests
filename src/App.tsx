@@ -1,5 +1,4 @@
-import {Icon, Rainbow} from "./components";
-import {FileLink} from "./components/htmlelements/links/filelink/filelink.tsx";
+import {Icon, Rainbow, FileLink} from "./components";
 
 function App() {
 
@@ -7,7 +6,7 @@ function App() {
         <div className={"container"}>
 
             <div className="p-4 text-eapo-blue-dark">
-                <Icon icon={"envelope-"} size={"2xl"} spin={false}/>
+                <Icon icon={"envelope"} size={"2xl"} spin={false}/>
             </div>
 
             <div className="p-4 text-eapo-blue-dark">

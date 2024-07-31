@@ -1,6 +1,6 @@
 import React, {LinkHTMLAttributes} from "react";
 import {Doc, Docx, Html, Jpg, Pdf, Ppt, Pptx, Tif, Txt, Xls, Xlsx, Xml, Zip} from "../../fileicon/icons";
-import {FileLinkType} from "../../../../types/htmlelements/links/filelink/filelink.ts";
+import {FileLinkType} from "../../../../types/htmlelements";
 
 export const FileLink = (props: FileLinkType & LinkHTMLAttributes<HTMLElement>) => {
 
