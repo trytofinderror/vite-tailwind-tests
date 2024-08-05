@@ -1,9 +1,15 @@
 import {Icon, Rainbow, FileLink, Link} from "./components";
+import {Logo} from "./components/htmlelements/logo";
 
 function App() {
 
     return (
-        <div className={"container"}>
+        <div className={"container bg-[#000000]"}>
+            <div className={"text-eapo-red grid-cols-7 grid"}>
+                <Logo type={"fullname-horizontal"} lang={"ru"} height={100} />
+            </div>
+
+
 
             <div className="p-4 text-eapo-blue-dark">
                 <Icon icon={"gem"} size={"7x"} spin={false}/>
